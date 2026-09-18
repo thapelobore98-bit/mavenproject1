@@ -43,9 +43,21 @@ public class Main {
             System.out.print("Enter password: ");
             String loginPassword = scanner.nextLine();
 
-            System.out.println(
-                    login.returnLoginStatus(loginUsername, loginPassword)
+            boolean loginResult = login.loginUser(
+                    loginUsername,
+                    loginPassword
             );
+
+            if (loginResult) {
+                System.out.println(
+                        "Welcome " + loginUsername
+                        + ", it is great to see you again."
+                );
+            } else {
+                System.out.println(
+                        "Username or password incorrect, please try again."
+                );
+            }
         }
 
         scanner.close();
