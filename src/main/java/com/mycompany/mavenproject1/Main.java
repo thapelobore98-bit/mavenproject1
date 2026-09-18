@@ -2,6 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+```java
 package com.mycompany.loginsystem;
 
 import java.util.Scanner;
@@ -14,7 +15,7 @@ public class Main {
         Login login = new Login();
 
         System.out.println("=================================");
-        System.out.println("       LOGIN SYSTEM");
+        System.out.println("   ACADEMIC LOGIN SYSTEM");
         System.out.println("=================================");
 
         // Registration
