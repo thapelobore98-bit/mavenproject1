@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-```java
+
 package com.mycompany.loginsystem;
 
 import java.util.Scanner;
@@ -19,7 +19,7 @@ public class Main {
         System.out.println("=================================");
 
         // Registration
-        System.out.println("\n=== Registration ===");
+        System.out.println("\n=== User Registration ===");
 
         System.out.print("Enter username: ");
         String username = scanner.nextLine();
