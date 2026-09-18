@@ -13,7 +13,12 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Login login = new Login();
 
-        System.out.println("=== Registration ===");
+        System.out.println("=================================");
+        System.out.println("       LOGIN SYSTEM");
+        System.out.println("=================================");
+
+        // Registration
+        System.out.println("\n=== Registration ===");
 
         System.out.print("Enter username: ");
         String username = scanner.nextLine();
@@ -30,12 +35,12 @@ public class Main {
                 cellPhoneNumber
         );
 
-        System.out.println(registrationMessage);
+        System.out.println("\n" + registrationMessage);
 
+        // Login
         if (registrationMessage.equals("Registration successful.")) {
 
-            System.out.println();
-            System.out.println("=== Login ===");
+            System.out.println("\n=== Login ===");
 
             System.out.print("Enter username: ");
             String loginUsername = scanner.nextLine();
@@ -43,21 +48,12 @@ public class Main {
             System.out.print("Enter password: ");
             String loginPassword = scanner.nextLine();
 
-            boolean loginResult = login.loginUser(
+            String loginStatus = login.returnLoginStatus(
                     loginUsername,
                     loginPassword
             );
 
-            if (loginResult) {
-                System.out.println(
-                        "Welcome " + loginUsername
-                        + ", it is great to see you again."
-                );
-            } else {
-                System.out.println(
-                        "Username or password incorrect, please try again."
-                );
-            }
+            System.out.println("\n" + loginStatus);
         }
 
         scanner.close();
